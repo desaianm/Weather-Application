@@ -1,0 +1,25 @@
+{
+	"cities": [
+		{
+			"cityName": "Brampton, Canada",
+			"cityLat": 43.656233,
+			"cityLng": -79.739397
+		},
+		{
+			"cityName": "London, Great Britian",
+			"cityLat": 51.5085,
+			"cityLng": -0.1258
+		},
+		{
+			"cityName": "Sydney, Australia",
+			"cityLat": -33.8679,
+			"cityLng": 151.2073
+		},
+		{
+			"cityName": "Ahmedabad, India",
+			"cityLat": 23.0225,
+			"cityLng":  72.5714
+		}
+
+	]
+}

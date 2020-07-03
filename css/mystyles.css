@@ -1,0 +1,171 @@
+/* JSONP CSS */
+
+h2{font-weight: bold; color: rgb(244, 244, 252); text-align: center;
+	 padding: 25px; background-color: rgb(50, 51, 51);}
+
+li {
+	list-style-type: none; text-align: center; 
+	font-size: 1.5em; font-weight: bold; 
+}
+/* 
+a{text-decoration: none;
+	margin: 20px;
+	border: thin solid rgb(24, 38, 43); 
+	border-radius: 10px; 
+	box-shadow: 0 8px 6px -6px black;
+	padding: 10px;
+	color: antiquewhite;
+	background-color: blueviolet;
+
+}
+a{
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+		width: 20%;
+		font-size: larger;
+		text-align: center;
+	
+ }
+ */
+ 
+
+ 
+li hr {border: solid thick navy;}
+
+/* #cityList{
+	display: block;
+	border: thin solid lightblue; 
+  color: black;
+	border-radius: 10px; 
+  text-decoration: none;
+  background-color: rgba(248, 248, 248, 0.815);
+  box-shadow: 0 8px 6px -6px black;
+  padding: 20px; 
+  font-family: sans-serif;
+  text-align: center;
+} */
+#content{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"grid1 grid1 grid1 grid1"
+	"card1 card2 card3 card4"
+	;
+	grid-gap: 10px;
+}
+.gridArea {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+		grid-template-areas: 
+			"dataCity dataTemp" 
+			"dataWind dataHum"
+			"dataPress dataPress"
+		;
+	grid-gap: 40px;
+}
+.grid1{
+	text-align: center;
+	grid-area: grid1;
+	font-size: 30px;
+	height: 100px;
+	width: 100%;
+}
+.card0,.card1,.card2,.card3 {
+ grid-area: card1;
+ box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+ max-width: 250px;
+ text-align: center;
+ font-family: arial;
+ background-color: rgba(78, 183, 231, 0.938);
+ color: white;
+ padding: 10px 2.5px;
+ margin:auto;
+ font-size: 40px;
+}
+.card1 {
+	grid-area: card2;
+	}
+.card2{
+	grid-area: card3;	
+}
+.card3{
+	grid-area: card4;
+}
+
+.cities{
+	text-decoration: none;
+	color: black;
+}
+
+.dataCity {
+	grid-area: dataCity;
+	box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+	width: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: rgba(10, 18, 22, 0.938);
+	color: white;
+	padding: 20px 10px;
+	margin:auto;
+	font-size: 40px;}
+.dataTemp {grid-area: dataTemp;box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+	width: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: rgba(10, 18, 22, 0.938);
+	color: white;
+	padding: 20px 10px;
+	margin:auto;
+	font-size: 40px;}
+.dataWind {grid-area: dataWind;
+	box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+	width: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: rgba(4, 10, 12, 0.938);
+	color: white;
+	padding: 20px 10px;
+	margin:auto;
+	font-size: 40px;}
+.dataHum {
+	grid-area: dataHum;
+	box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+	width: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: rgba(4, 10, 12, 0.938);
+	color: white;
+	padding: 20px 10px;
+	margin:auto;
+	font-size: 40px;
+}
+.dataPress {
+	grid-area: dataPress;
+	box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+	width: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: rgba(4, 10, 12, 0.938);
+	color: white;
+	padding: 20px 10px;
+	margin:auto;
+	font-size: 40px;
+}
+
+
+@media screen and (orientation: portrait) {
+	.gridArea {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"dataCity" "dataTemp" 
+			"dataWind" "dataHum"
+			"dataPress"
+		;
+		grid-gap: 5px;
+	}	
+	.formatLabel {font-size: 2em; font-style: italic; color: navy; text-align: center;;}
+	.formatData {font-size: 2em; font-weight: bold; color: navy; text-align: center; margin-bottom: 5px;} 
+}
